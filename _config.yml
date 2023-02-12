@@ -22,16 +22,18 @@ minify: false
 # Define custom file paths.
 # Create your custom files in site directory `source/_data` and uncomment needed files below.
 custom_file_path:
-#head: source/_data/head.swig
-#header: source/_data/header.swig
-#sidebar: source/_data/sidebar.swig
-#postMeta: source/_data/post-meta.swig
-#postBodyEnd: source/_data/post-body-end.swig
-#footer: source/_data/footer.swig
-#bodyEnd: source/_data/body-end.swig
-variable: source/_data/variables.styl
-#mixin: source/_data/mixins.styl
-style: source/_data/styles.styl
+  #head: source/_data/head.swig
+  #header: source/_data/header.swig
+  #header: source/_data/header.swig
+  #sidebar: source/_data/sidebar.swig
+  #sidebar: source/_data/sidebar.njk
+  #postMeta: source/_data/post-meta.swig
+  #postBodyEnd: source/_data/post-body-end.swig
+  #footer: source/_data/footer.swig
+  #bodyEnd: source/_data/body-end.swig
+  variable: source/_data/variables.styl
+  #mixin: source/_data/mixins.styl
+  style: source/_data/styles.styl
 
 
 # ---------------------------------------------------------------
@@ -48,7 +50,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Show multilingual switcher in footer.
-language_switcher: false
+language_switcher: true
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
@@ -67,7 +69,7 @@ footer:
   copyright:
 
   # Powered by Hexo & NexT
-  powered: true
+  powered: false
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
@@ -179,7 +181,7 @@ site_state: true
 social:
   GitHub: https://github.com/uddoo || fab fa-github
   E-Mail: mailto:ywli233@qq.com || fa fa-envelope
-  Bilibili: https://space.bilibili.com/3461572670261783 || fa fa-tv
+  Bilibili: https://space.bilibili.com/3461572670261783 || iconfont icon-bilibili-line
 #Weibo: https://weibo.com/yourname || fab fa-weibo
 #Google: https://plus.google.com/yourname || fab fa-google
 #Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -358,9 +360,9 @@ codeblock:
   highlight_theme: normal
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Show text copy result.
-    show_result: false
+    show_result: true
     # Available values: default | flat | mac
     style:
 
@@ -657,7 +659,7 @@ gitalk:
 rating:
   enable: false
   id:     # <app_id>
-  color:  fc6423
+  color: fc6423
 
 # AddThis Share. See: https://www.addthis.com
 # Go to https://www.addthis.com/dashboard to customize your tools.
@@ -855,7 +857,7 @@ pace:
 # Dependencies: https://github.com/theme-next/theme-next-three
 three:
   enable: true
-  three_waves: false
+  three_waves: true
   canvas_lines: false
   canvas_sphere: false
 
@@ -863,7 +865,7 @@ three:
 # Dependencies: https://github.com/theme-next/theme-next-canvas-ribbon
 # For more information: https://github.com/zproo/canvas-ribbon
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 100 # The width of the ribbon
   alpha: 0.6 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
